@@ -3,7 +3,9 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from textblob import TextBlob
-from groq import Groqapp = Flask(__name__)
+from groq import Groq  # This line was merged with the next one by mistake.
+
+app = Flask(__name__)  # This is now on its own correct line.
 CORS(app)
 
 # --- Initialize Analyzers ---

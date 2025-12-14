@@ -3,3 +3,4 @@ flask-cors
 vaderSentiment
 textblob
 gunicorn
+groq
